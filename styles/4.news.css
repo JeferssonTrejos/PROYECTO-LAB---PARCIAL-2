@@ -1,0 +1,20 @@
+:root {
+    --blue-100: #1220DF;
+    --blue-200: #3E20E4;
+    --blue-600: #003884;
+    --blue-600: #00285F;
+    --blue-900: #04025E;
+    --sky-400: #00ABF1;
+    
+    --gray-100: #E8E8F4;
+    --gray-150: #C0C0C0;
+    --gray-200: #737373;
+    --gray-300: #222222;
+
+    --white: #ffffff;
+}
+
+
+.news-container{
+    border: solid 2px var(--gray-300);
+}
