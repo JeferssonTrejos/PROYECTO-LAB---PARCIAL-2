@@ -14,7 +14,186 @@
     --white: #ffffff;
 }
 
-/* BORRA ESTO PARA ESCRIBIR SU CSS */
-.hero-container{
-    border: solid 2px var(--gray-300);
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    gap: 4rem;
+    background-color: var(--white);
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.inscriptions {
+    color: var(--blue-100);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    background-color: var(--gray-100);
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 500;
+    position: relative;
+}
+
+.inscriptions::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: var(--blue-100);
+    border-radius: 50%;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: var(--gray-300);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-text h1 span {
+    color: var(--blue-100);
+    display: block;
+}
+
+.description {
+    color: var(--gray-200);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.btn-primary {
+    background-color: var(--blue-100);
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--blue-900);
+}
+
+.arrow-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover .arrow-icon {
+    transform: translateX(5px);
+}
+
+.btn-secondary {
+    border: 1px solid var(--blue-100);
+    color: var(--blue-100);
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+    background-color: var(--blue-100);
+    color: var(--white);
+}
+
+.phone-icon {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.btn-secondary .phone-icon {
+    filter: invert(23%) sepia(90%) saturate(1960%) hue-rotate(227deg) brightness(97%) contrast(87%);
+}
+
+.btn-secondary:hover .phone-icon {
+    filter: brightness(0) invert(1);
+    transform: rotate(-10deg);
+}
+
+.hero-stats {
+    display: flex;
+    gap: 3rem;
+}
+
+.stat h3 {
+    color: var(--blue-100);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat p {
+    color: var(--gray-200);
+    font-size: 0.9rem;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 500px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+    .hero-container {
+        padding: 2rem 3rem;
+        gap: 2rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 300px;
+    }
 }
