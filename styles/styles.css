@@ -25,3 +25,14 @@ body{
     gap: 40px;
     padding-top: 40px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold; 
+}

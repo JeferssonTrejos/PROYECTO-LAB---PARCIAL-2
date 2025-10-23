@@ -1,20 +1,151 @@
 :root {
-    --blue-100: #1220DF;
-    --blue-200: #3E20E4;
-    --blue-600: #003884;
-    --blue-600: #00285F;
-    --blue-900: #04025E;
-    --sky-400: #00ABF1;
-    
-    --gray-100: #E8E8F4;
-    --gray-150: #C0C0C0;
-    --gray-200: #737373;
-    --gray-300: #222222;
+  --blue-100: #1220df;
+  --blue-200: #3e20e4;
+  --blue-600: #003884;
+  --blue-600: #00285f;
+  --blue-900: #04025e;
+  --sky-400: #00abf1;
 
-    --white: #ffffff;
+  --gray-100: #e8e8f4;
+  --gray-150: #c0c0c0;
+  --gray-200: #737373;
+  --gray-300: #222222;
+
+  --white: #ffffff;
 }
 
-/* BORRA ESTO PARA ESCRIBIR SU CSS */
-.news-container{
-    border: solid 2px var(--gray-300);
+
+
+/* ======== START - CSS NOTICIAS ======== */
+
+
+/* Contenedor principal de la seccion de noticias */
+.news-container {
+  width: 100%;
+  padding: 70px 0;
 }
+
+/* Caja de noticias centrada */
+.news-body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Título  */
+.news-title {
+  margin: 20px auto;
+  margin-left: 40px;
+  color: var(--gray-300);
+}
+.news-title h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+}
+.news-title p {
+  color: var(--gray-200);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Layout principal columnas */
+.news-news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  min-height: 600px;
+}
+
+/* Columna izquierda */
+.news-columnone {
+  background-color: var(--gray-100);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+/* Columna derecha*/
+.news-columntwo {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Tarjetas de noticias */
+.news-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.news-card:hover {
+  cursor: pointer;
+  .news-text-body {
+    opacity: 1;
+  }
+}
+
+/* Cuerpo del texto de la noticia */
+.news-text-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--gray-100);
+  transition: opacity 0.3s ease;
+}
+
+.news-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.news-text-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  color: var(--gray-100);
+}
+.news-description {
+  margin: 0 0 12px 0;
+  color: var(--gray-100);
+  font-size: 1.06rem;
+  /* line-height: 1.4; */
+
+  line-height: 140%;
+}
+
+.news-link {
+  width: 100%;
+  text-align: right;
+  /* background-color: #003884; */
+}
+.news-link a {
+  color: var(--gray-100);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid var(--gray-200);
+  text-align: right;
+  font-size: 14px;
+}
+.news-link a:hover {
+  color: var(--gray-150);
+}
+
+/* ======== END - CSS NOTICIAS ======== */
