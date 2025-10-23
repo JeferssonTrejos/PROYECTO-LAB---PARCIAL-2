@@ -14,10 +14,7 @@
   --white: #ffffff;
 }
 
-
-
 /* ======== START - CSS NOTICIAS ======== */
-
 
 /* Contenedor principal de la seccion de noticias */
 .news-container {
@@ -146,6 +143,31 @@
 }
 .news-link a:hover {
   color: var(--gray-150);
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+@media (max-width: 1200px) {
+  .news-body {
+    max-width: 95vw;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .news-news {
+    grid-template-columns: 1fr;
+    min-height: unset;
+    gap: 30px;
+  }
+  .news-columnone,
+  .news-columntwo {
+    min-height: 300px;
+    height: auto;
+  }
+  .news-card {
+    min-height: 250px;
+    height: 300px;
+  }
 }
 
 /* ======== END - CSS NOTICIAS ======== */
