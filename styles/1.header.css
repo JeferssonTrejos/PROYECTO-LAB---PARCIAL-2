@@ -14,7 +14,121 @@
     --white: #ffffff;
 }
 
-/* BORRA ESTO PARA ESCRIBIR SU CSS */
-.header-container{
-    border: solid 2px var(--gray-300);
+/* === HEADER === */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue-900); 
+  padding: 0.75rem 3rem;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
+
+/* LOGO */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-logo img {
+  width: 40px;
+  height: auto;
+}
+
+.header-logo h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* NAVIGATION */
+.nav-menu ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: var(--sky-400); 
+}
+
+/* Botón CTA */
+.btn-highlight {
+  background: linear-gradient(90deg, var(--sky-400) 0%, var(--blue-200) 100%);
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.btn-highlight:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* MENU ICON */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.6rem;
+  color: var(--white);
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.4; /* centra visualmente el símbolo de menu*/
+}
+
+
+/* ----------------RESPONSIVE MENU---------------- */
+@media (max-width: 900px) {
+  .nav-menu {
+    display: none;
+    width: 100%;
+    background: var(--blue-900);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 1rem 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #menu-toggle:checked ~ .nav-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-highlight {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-weight: 700;
+  }
+}
+
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carreras | CYGNUS University</title>
+
+  <!-- Estilos globales -->
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/1.header.css" />
+  <link rel="stylesheet" href="./styles/6.footer.css" />
+  <link rel="stylesheet" href="./styles/7.carreras.css" />
+</head>
+
+<body>
+  <!-- Header (reutilizado) -->
+  <header id="header"></header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="careers-page">
+    <section class="careers-hero">
+  <div class="career-text">
+    <h1>Programas Académicos</h1>
+    <p class="subtitle">Encuentra tu Carrera Ideal</p>
+    <p class="description">
+      Descubre el camino profesional que te apasiona. Nuestra universidad te ofrece programas diseñados para prepararte ante los desafíos y las oportunidades del mañana. Explora la diversidad de campos de estudio, desde las ciencias de la salud hasta la ingeniería y las humanidades. Tu vocación te espera, y estamos aquí para ayudarte a alcanzarla.
+    </p>
+  </div>
+
+  <div class="hero-img">
+    <img src="./assets/img/carrera-hero.png" alt="Profesional de CYGNUS" />
+  </div>
+</section>
+
+    <section class="careers-tabs">
+      <!-- Radios ocultos para tabs -->
+      <input type="radio" name="tab" id="tab-lic" checked>
+      <input type="radio" name="tab" id="tab-ing">
+      <input type="radio" name="tab" id="tab-doc">
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <label for="tab-lic" class="tab">Licenciaturas</label>
+        <label for="tab-ing" class="tab">Ingenierías</label>
+        <label for="tab-doc" class="tab">Doctorados</label>
+      </div>
+
+      <!-- Contenido: Licenciaturas -->
+      <div class="tab-content lic">
+        <div class="program-card">
+          <img src="assets/img/program-graphic.png" alt="Diseño Gráfico" />
+          <div class="card-text">
+            <h3>Licenciatura en Diseño Gráfico</h3>
+            <p>
+              Desata tu creatividad y comunica ideas de alto impacto visual. Conviértete en un profesional capaz de crear marcas, interfaces y campañas memorables.
+            </p>
+            <a href="index.html#contact" class="btn-program">Solicitar información</a>
+          </div>
+        </div>
+
+        <div class="program-card">
+          <img src="assets/img/program-psychology.png" alt="Psicología" />
+          <div class="card-text">
+            <h3>Licenciatura en Psicología</h3>
+            <p>
+              Adquiere las herramientas para entender la mente y el comportamiento humano. Ayuda a mejorar el bienestar emocional de individuos y grupos.
+            </p>
+            <a href="index.html#contact" class="btn-program">Solicitar información</a>
+          </div>
+        </div>
+
+        <div class="program-card">
+          <img src="assets/img/program-accounting.png" alt="Contaduría Pública" />
+          <div class="card-text">
+            <h3>Licenciatura en Contaduría Pública</h3>
+            <p>
+              Domina el lenguaje de los negocios y la gestión de recursos. Prepárate para ser un líder estratégico para cualquier organización.
+            </p>
+            <a href="index.html#contact" class="btn-program">Solicitar información</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido: Ingenierías -->
+      <div class="tab-content ing">
+        <p class="soon">Próximamente disponibles...</p>
+      </div>
+
+      <!-- Contenido: Doctorados -->
+      <div class="tab-content doc">
+        <p class="soon">Próximamente disponibles...</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (reutilizado) -->
+  <footer id="footer"></footer>
+
+  <!-- Carga modular (solo para header/footer) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $('#header').load('./1.header.html');
+    $('#footer').load('./6.footer.html');
+  </script>
+</body>
+</html>
