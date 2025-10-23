@@ -1,31 +1,35 @@
 :root {
-    --blue-100: #1220DF;
-    --blue-200: #3E20E4;
-    --blue-600: #003884;
-    --blue-600: #00285F;
-    --blue-900: #04025E;
-    --sky-400: #00ABF1;
-    
-    --gray-100: #E8E8F4;
-    --gray-150: #C0C0C0;
-    --gray-200: #737373;
-    --gray-300: #222222;
+  --blue-100: #1220df;
+  --blue-200: #3e20e4;
+  --blue-600: #003884;
+  --blue-600: #00285f;
+  --blue-900: #04025e;
+  --sky-400: #00abf1;
 
-    --white: #ffffff;
+  --gray-100: #e8e8f4;
+  --gray-150: #c0c0c0;
+  --gray-200: #737373;
+  --gray-300: #222222;
+
+  --white: #ffffff;
 }
 
 /* === HEADER === */
 .header-container {
+  background-color: var(--blue-900);
+  color: var(--white);
+}
+
+.header-body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--blue-900); 
-  padding: 0.75rem 3rem;
-  color: var(--white);
-  font-family: 'Poppins', sans-serif;
+  padding: 0.75rem 1rem;
+  font-family: "Poppins", sans-serif;
   position: sticky;
   top: 0;
   z-index: 999;
+  box-sizing: border-box;
 }
 
 /* LOGO */
@@ -62,7 +66,7 @@
 }
 
 .nav-menu a:hover {
-  color: var(--sky-400); 
+  color: var(--sky-400);
 }
 
 /* Botón CTA */
@@ -97,7 +101,6 @@
   line-height: 1.4; /* centra visualmente el símbolo de menu*/
 }
 
-
 /* ----------------RESPONSIVE MENU---------------- */
 @media (max-width: 900px) {
   .nav-menu {
@@ -130,5 +133,3 @@
     font-weight: 700;
   }
 }
-
-

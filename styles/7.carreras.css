@@ -1,28 +1,30 @@
 :root {
-  --blue-100: #1220DF;
-  --blue-200: #3E20E4;
-  --blue-600: #00285F;
-  --blue-900: #04025E;
-  --sky-400: #00ABF1;
-  
-  --gray-50: #F7F7FA;
-  --gray-100: #E8E8F4;
-  --gray-150: #C0C0C0;
+  --blue-100: #1220df;
+  --blue-200: #3e20e4;
+  --blue-600: #00285f;
+  --blue-900: #04025e;
+  --sky-400: #00abf1;
+
+  --gray-50: #f7f7fa;
+  --gray-100: #e8e8f4;
+  --gray-150: #c0c0c0;
   --gray-200: #737373;
   --gray-300: #222222;
   --white: #ffffff;
 }
 
 /* ===== GENERAL ===== */
-body, main, section {
+body,
+main,
+section {
   margin: 0;
   padding: 0;
 }
 
 .careers-page {
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   color: var(--blue-900);
-  background-color: var(--gray-50);
+  background-color: var(--gray-100);
 }
 
 /* ===== HERO ===== */
@@ -32,7 +34,6 @@ body, main, section {
   justify-content: space-between;
   gap: 1rem;
   padding: 3rem 2rem;
-  background-color: var(--gray-100);
   flex-wrap: wrap;
 }
 
@@ -45,7 +46,7 @@ body, main, section {
 
 .career-text h1,
 .career-text p {
-  margin: 0; 
+  margin: 0;
   padding: 0;
 }
 
@@ -97,7 +98,7 @@ input[type="radio"] {
   display: flex;
   gap: 1rem;
   justify-content: flex-start;
-  margin: 1.5rem 2.5rem 1rem;
+  margin: 1.5rem 1.5rem 1rem;
   flex-wrap: wrap;
 }
 
@@ -122,7 +123,7 @@ input[type="radio"] {
 /* ===== CONTENIDO ===== */
 .tab-content {
   display: none;
-  padding: 0 2.5rem 2rem;
+  padding: 0 1.5rem 1rem;
 }
 
 #tab-lic:checked ~ .lic,
@@ -267,5 +268,3 @@ input[type="radio"] {
     margin: 0 auto;
   }
 }
-
-

@@ -22,12 +22,6 @@
   padding: 70px 0;
 }
 
-/* Caja de noticias centrada */
-.news-body {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 /* Título  */
 .news-title {
   margin: 20px auto;
